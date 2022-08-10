@@ -17,6 +17,9 @@ export default function NavBar() {
 					<NavLink to='/Project'>
 						Project
 					</NavLink>
+					<NavLink to='/Post'>
+						Post
+					</NavLink>
 				</nav>
 			</div>
 		</header>
