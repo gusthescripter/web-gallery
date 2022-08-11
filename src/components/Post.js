@@ -21,7 +21,9 @@ export default function Post() {
 		<main>
 			<section>
 				<h1>test</h1>
-				{postData && postData[0].title.rendered}
+				{postData && postData.map((posts, index) => (
+					<h3>{posts.title.rendered}</h3>
+				))}
 			</section>
 		</main>
 	)
