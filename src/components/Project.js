@@ -23,7 +23,7 @@ export default function Project() {
 				{projectData && projectData.map((projects, index) => (
 					<div>
 						<h3>{projects.title.rendered}</h3>
-						<Link to={`/singlepost/${projects.id}`} key={projects.id}>info</Link>
+						<Link to={`/singleproject/${projects.id}`} key={projects.id}>info</Link>
 					</div>
 				))}
 			</section>

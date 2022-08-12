@@ -6,6 +6,7 @@ import About from './components/About'
 import Project from './components/Project'
 import Post from './components/Post'
 import SinglePost from './components/SinglePost'
+import SingleProject from './components/SingleProject'
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
           <Route element={<Project />} path='/project' />
           <Route element={<Post />} path='/post' />
           <Route element={<SinglePost />} path='/singlepost/:id' />
+          <Route element={<SingleProject />} path='/singleproject/:id' />
+
         
       </Routes>
     </Router>
