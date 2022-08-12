@@ -1,5 +1,5 @@
-
-import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 
 export default function Post() {
 	
@@ -22,7 +22,11 @@ export default function Post() {
 			<section>
 				<h1>test</h1>
 				{postData && postData.map((posts, index) => (
-					<h3>{posts.title.rendered}</h3>
+					<div>
+						<h3>{posts.title.rendered}</h3>
+						<p>{posts.id}</p>
+						<Link to={`/singlepost/${posts.id}`} key={posts.id}>info</Link>
+					</div>
 				))}
 			</section>
 		</main>
