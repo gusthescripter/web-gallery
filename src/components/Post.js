@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
+import PostItem from './PostItem';
 
 export default function Post() {
 	
@@ -23,8 +24,7 @@ export default function Post() {
 				<h1>test</h1>
 				{postData && postData.map((posts, index) => (
 					<div>
-						<h3>{posts.title.rendered}</h3>
-						<p>{posts.id}</p>
+						<PostItem datas={posts} />
 						<Link to={`/singlepost/${posts.id}`} key={posts.id}>info</Link>
 					</div>
 				))}
