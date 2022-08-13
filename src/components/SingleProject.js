@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 
 export default function SingleProject() {
 	const [singleProject, setSingleProject] = useState(null);
@@ -22,6 +22,9 @@ export default function SingleProject() {
 		<main>
 			<h1>Single</h1>
 			{singleProject && singleProject.title.rendered}
+			<Link to='/project'>Back</Link>
+			<div dangerouslySetInnerHTML={singleProject && { __html: singleProject.content.rendered }}></div>
+			
 		</main>
 	)
 }

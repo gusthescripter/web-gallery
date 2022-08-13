@@ -15,10 +15,10 @@ export default function NavBar() {
 						About
 					</NavLink>
 					<NavLink to='/Project'>
-						Project
+						Projects
 					</NavLink>
 					<NavLink to='/Post'>
-						Post
+						Posts
 					</NavLink>
 				</nav>
 			</div>

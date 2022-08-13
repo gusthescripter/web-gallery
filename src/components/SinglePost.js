@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 
 export default function SinglePost() {
 	const [singlePost, setSinglePost] = useState(null);
@@ -22,6 +22,9 @@ export default function SinglePost() {
 		<main>
 			<h1>Single</h1>
 			{singlePost && singlePost.title.rendered}
+			<br/>
+			<Link to='/post'>Back</Link>
+			<div dangerouslySetInnerHTML={singlePost && { __html: singlePost.content.rendered }}></div>
 		</main>
 	)
 }
