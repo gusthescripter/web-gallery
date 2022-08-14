@@ -20,8 +20,7 @@ export default function SinglePost() {
 	console.log(singlePost);
 	return (
 		<main>
-			<h1>Single</h1>
-			{singlePost && singlePost.title.rendered}
+			<h1>{singlePost && singlePost.title.rendered}</h1>
 			<br/>
 			<Link to='/post'>Back</Link>
 			<div dangerouslySetInnerHTML={singlePost && { __html: singlePost.content.rendered }}></div>

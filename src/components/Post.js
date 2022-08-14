@@ -21,7 +21,7 @@ export default function Post() {
 	return (
 		<main>
 			<section>
-				<h1>test</h1>
+				<h1>Posts</h1>
 				{postData && postData.map((posts, index) => (
 					<div>
 						<PostItem datas={posts} />

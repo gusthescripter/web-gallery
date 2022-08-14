@@ -20,8 +20,7 @@ export default function SingleProject() {
 	console.log(singleProject);
 	return (
 		<main>
-			<h1>Single</h1>
-			{singleProject && singleProject.title.rendered}
+			<h1>{singleProject && singleProject.title.rendered}</h1>
 			<Link to='/project'>Back</Link>
 			<div dangerouslySetInnerHTML={singleProject && { __html: singleProject.content.rendered }}></div>
 			
