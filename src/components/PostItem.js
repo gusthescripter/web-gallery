@@ -24,6 +24,8 @@ export default function PostItem({datas}) {
 				<h3>{datas.title.rendered}</h3>
 				<br/>
 				<img src={postItemData && postItemData.guid.rendered} width='80' height='80'></img>
+				<br/>
+				<div dangerouslySetInnerHTML={{ __html:datas.excerpt.rendered}}></div>
 			</section>
 		</main>
 	)

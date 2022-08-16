@@ -11,14 +11,14 @@ export default function NavBar() {
 					<NavLink to='/'>
 						Home
 					</NavLink>
-					<NavLink to='/about'>
-						About
-					</NavLink>
 					<NavLink to='/Project'>
 						Projects
 					</NavLink>
 					<NavLink to='/Post'>
 						Posts
+					</NavLink>
+					<NavLink to='/about'>
+						About
 					</NavLink>
 				</nav>
 			</div>
