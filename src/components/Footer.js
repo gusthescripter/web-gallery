@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 
 export default function Footer() {
 	return (
-		<footer>
+		<footer className="bg-red-600">
 		<br/>
 		<br/>
 			<div>
