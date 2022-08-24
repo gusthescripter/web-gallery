@@ -1,10 +1,10 @@
-# Getting Started with Create React App
+# My React Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my portfolio. I built it with React and Wordpress. You can check out my work by going to [Gus' Portfolio](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Technolgies Used
 
-In the project directory, you can run:
+Tailwindcss, postcss, autofixer, React
 
 ### `npm start`
 
