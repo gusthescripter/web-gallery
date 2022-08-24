@@ -6,10 +6,10 @@ import { NavLink } from 'react-router-dom'
 export default function Footer() {
 	return (
 		<footer className="bg-red-600">
-		<br/>
-		<br/>
+
 			<div>
-				<nav>
+				<nav className="relative container mx-auto p-6">
+				<div>
 					<NavLink to='/'>
 						Home
 					</NavLink>
@@ -22,6 +22,7 @@ export default function Footer() {
 					<NavLink to='/about'>
 						About
 					</NavLink>
+				</div>
 				</nav>
 			</div>
 		</footer>
