@@ -1,9 +1,10 @@
 
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
 
 export default function NavBar() {
+	const [showMenu, setShowMenu] = useState(false)
 	return (
 		<header>
 			<div>
@@ -30,14 +31,16 @@ export default function NavBar() {
 							About
 						</NavLink>
 					</div>
-					<button id="menu-btn" className=" block hamburger md:hidden focus:outline-none">
+					
+					<button id="menu-btn" className={`${showMenu && "open"} block hamburger md:hidden focus:outline-none`} onClick={() => setShowMenu(!showMenu)}>
 						<span className="hamburger-top"></span>
 						<span className="hamburger-middle"></span>
 						<span className="hamburger-bottom"></span>
 					</button>
+					
 				</div>
 				<div className="md:hidden">
-					<div id="menu" className="absolute flex flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+					<div id="menu" className={`${!showMenu && "hidden"} absolute flex flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md`}>
 						<NavLink to='/' className="text-red-600 hover:text-red-200">
 							Home
 						</NavLink>
